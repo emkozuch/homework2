@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(95, 95, 95);
+}
+
+.clock_container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+@keyframes blink{
+    50% {opacity: 0;}
+}
+
+.number_block {
+    background: rgb(59, 57, 57);
+    border-radius: 5%;
+    margin: 2px;
+    width: 50px;
+    text-align: center;
+    color: blueviolet;
+}
+.separator{
+    animation: blink 1s infinite;
+}

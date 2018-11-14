@@ -3,8 +3,8 @@ function clockDisplay() {
     var hour = currentTime.getUTCHours() + 1;
     var minutes = currentTime.getUTCMinutes();
     var seconds = currentTime.getUTCSeconds();
-    
-    if (hour === 24){
+
+    if (hour === 24) {
         document.getElementById("hour_tens").innerHTML = "0";
         document.getElementById("hour_units").innerHTML = "0";
     } else {

@@ -1,8 +1,8 @@
 function clockDisplay() {
     var currentTime = new Date();
-    var hour = currentTime.getUTCHours() + 1;
-    var minutes = currentTime.getUTCMinutes();
-    var seconds = currentTime.getUTCSeconds();
+    var hour = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var seconds = currentTime.getSeconds();
 
     if (hour === 24) {
         document.getElementById("hour_tens").innerHTML = "0";
